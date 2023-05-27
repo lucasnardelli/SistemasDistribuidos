@@ -1,6 +1,9 @@
 - name: Destroy cluster before starting again
   command: kubeadm reset -f
 
+- name: restart containerd
+  command: systemctl restart containerd
+
 - name: Initialize k8s cluster
   command: kubeadm init
   register: kubeadm_init_output
@@ -24,8 +27,3 @@
         rm -fr join/{{ inventory_hostname }}
   delegate_to: localhost
   become: no
-
-- name: Install pod network
-  command: kubectl apply -f https://docs.projectcalico.org/v3.14/manifests/calico.yaml
-  environment:
-    KUBECONFIG: /etc/kubernetes/admin.conf

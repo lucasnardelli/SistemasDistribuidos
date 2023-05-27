@@ -5,5 +5,8 @@
     src: ./join/kubejoin.sh
     mode: '0700'
 
+- name: restart containerd
+  command: sudo systemctl restart containerd
+
 - name: Run command on remote
   shell: /opt/kubejoin.sh
