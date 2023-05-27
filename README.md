@@ -33,9 +33,9 @@ Agora na AWS é preciso criar um Bucket S3 e alterar o nome no arquivo backend.t
 
 Passo a passo para instânciar e criar um cluster Kubernetes (execute os comandos com o terminal na pasta do projeto):
 
-```terraform init```
-```terraform plan```
-```terraform apply -auto-approve```
-```./ec2.py --list```
-```ansible-playbook -u ubuntu -i ec2.py site.yml```
+- ```terraform init```
+- ```terraform plan```
+- ```terraform apply -auto-approve```
+- ```./ec2.py --list```
+- ```ansible-playbook -u ubuntu -i ec2.py site.yml```
 
