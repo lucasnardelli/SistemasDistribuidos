@@ -12,9 +12,11 @@ Em seguida é necessário fazer algumas modificações nos códigos em relação
 
 No código do arquivo main.tf altere a região para a definida no seu AWS:
 
-```provider "aws" {
+```
+provider "aws" {
   region = "us-east-2"
-}```
+}
+```
 
 Insira a sua public key ssh
 
