@@ -6,4 +6,4 @@ Pré-requisitos:
   - Terraform
   - Ansible
 
-Comece clonando o presente repositório 'git clone https://github.com/lucasnardelli/SistemasDistribuidos'
+Comece clonando o presente repositório ```git clone https://github.com/lucasnardelli/SistemasDistribuidos```
